@@ -1,0 +1,77 @@
+@import "../../../index.scss";
+
+.main {
+    padding: 10px;
+    width: 100vw;
+    height: 100%;
+    background-color: $white_background;
+    .topBar {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width: 550px) {
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 400px) {
+            font-size: 12px;
+        }
+        h1 {
+            font-weight: 900;
+            color: black;
+            margin: 10px 0px;
+        }
+        .inputDiv {
+            width: 25%;
+            display: flex;
+            .dropDownMenu label {
+                background-color: transparent;
+                color: black !important;
+            }
+            span {
+                margin-top: 10px;
+                color: black;
+            }
+            @media only screen and (max-width: 550px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 900px) {
+                width: 80%;
+            }
+        }
+        .detailsDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            transition: all 0.2s ease-in-out;
+            @media only screen and (max-width: 900px) {
+                width: 100%;
+                button {
+                    width: 40%;
+                }
+            }
+            .buttonStyled {
+                width: 150px;
+                height: 80px;
+                border: none;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                &:active {
+                    transform: scale(0.9);
+                }
+                @media(max-width:500px) {
+                    width: 80% !important;
+                }
+            }
+        }
+    }
+    .loweBar {
+        margin-top: 50px;
+        width: 100%;
+        height: 50%;
+    }
+}
