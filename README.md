@@ -6,6 +6,7 @@ To run this project, do the following steps:
 1. Copy the following variable in the env file inside `server` folder.
 
  > PORT=3001
+ 
  > OPEN_WEATHER_API_KEY=538882fc8387290c6cee83f313a6acf5
 
 2. Go to server folder and run `npm i`.
